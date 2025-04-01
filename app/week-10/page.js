@@ -3,6 +3,7 @@
 import { useUserAuth } from "./_utils/auth-context";
 import Link from "next/link";
 
+
 export default function Page() {
   const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
 
@@ -24,7 +25,7 @@ export default function Page() {
             onClick={async () => await firebaseSignOut()} className="px-4 py-2 bg-red-600 text-white rounded-md"
           > Logout </button>
           <div className="mt-4">
-            <Link href="/week-9/shopping-list">
+            <Link href="/week-10/shopping-list">
               <span className="text-blue-600 underline cursor-pointer">
                 Go to Shopping List
               </span>
